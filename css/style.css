@@ -1,0 +1,1281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background: var(--white-97, #f7f7f8);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container-fluid {
+  overflow: hidden;
+}
+
+/* ==============================================================
+                            Bar Start
+   ==============================================================*/
+
+.link {
+  background-color: rgba(255, 149, 0, 1);
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: none;
+  width: 97%;
+  /* height: 41px; */
+}
+
+.link:hover {
+  background-color: rgb(255, 171, 54);
+}
+
+.link:active {
+  background-color: rgb(255, 196, 0);
+}
+
+.sec-container {
+  padding: 10px 0px;
+  /* align-self: stretch; */
+}
+
+.sec-container a {
+  display: flex;
+  gap: 23px;
+  justify-content: center;
+  /* align-items: baseline; */
+}
+
+.free {
+  color: rgba(255, 255, 255, 1);
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  border: none;
+  height: 0px;
+}
+
+.free:hover {
+  background-color: rgba(255, 149, 0, 1);
+  color: rgb(207, 207, 207);
+}
+
+.free:active {
+  color: black;
+}
+
+.header-icon-img {
+  height: 20px;
+  width: 20px;
+}
+
+/* ==============================================================
+                 Header Start
+   ============================================================== */
+
+.grid {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.grid-tow-column {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.navbar-parents-div {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.img-and-navbar {
+  display: flex;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+}
+
+.navbar {
+  margin-left: 25px; /* 50px */
+  width: 100%;
+  z-index: 3;
+  transition: all 0.3s ease;
+}
+
+.navbar-list {
+  display: flex;
+}
+
+/* .navbar li {
+  padding: 14px 24px;
+} */
+
+.navbar a {
+  color: rgba(38, 38, 38, 1);
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  transition: color 0.1s linear;
+}
+
+.navbar li a:hover {
+  color: rgba(255, 149, 0, 1);
+}
+
+.navbar li a:active {
+  color: rgb(87, 51, 0);
+}
+
+.home {
+  padding: 12px 20px;
+  border-radius: 6px;
+  background-color: rgba(241, 241, 243, 1);
+}
+
+.courses {
+  margin-left: 26px;
+}
+
+.about {
+  margin-left: 26px;
+}
+
+.sricing {
+  margin-left: 26px;
+}
+
+.contact {
+  margin-left: 26px;
+}
+
+/* .navbar-manu-icon-btn {
+  display: none;
+} */
+
+.bi-list {
+  color: black;
+  font-size: 34px;
+  /* width: 34px;
+  height: 34px; */
+  margin-left: 20px;
+  display: none;
+}
+
+.navbar-two-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.btn-sign {
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-weight: 400;
+  border: transparent;
+  line-height: 150%; /* 21px */
+  color: rgba(38, 38, 38, 1);
+  transition: color 0.2s linear;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.btn-sign:hover {
+  color: rgba(255, 149, 0, 1);
+}
+
+.btn-sign:active {
+  color: rgb(87, 51, 0);
+}
+
+.btn-login {
+  display: flex;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+  align-items: center;
+  border: transparent;
+  border-radius: 8px;
+  font-family: Be Vietnam Pro;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  margin-left: 30px;
+  padding: 12px 24px;
+  font-size: 14px;
+}
+
+.btn-login:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgb(255, 171, 54);
+}
+
+.btn-login:active {
+  background-color: rgb(255, 196, 0);
+  color: black;
+}
+
+/* =============================================================
+                      Hero Section Start
+  ============================================================== */
+
+.hero-sec-parents-div {
+  display: flex;
+  justify-content: center;
+  /* background-color: rgba(255, 255, 255, 1); */
+}
+
+.abstract-line-image {
+  width: 39px;
+  height: 43px;
+  margin-top: 50px;
+}
+
+.hero-sec-container-bio-data {
+  /* display: flex; */
+  margin-top: 80px;
+}
+
+.hero-sec-bio-data-one {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px 12px 12px;
+}
+
+.icons {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 244, 229, 1);
+  /* padding: 12px 12px; */
+}
+
+.hero-sec-heading {
+  color: rgba(255, 149, 0, 1);
+  text-align: center;
+  font-family: Be Vietnam Pro;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  padding-left: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  line-height: 150%; /* 54px */
+  margin: 0px;
+}
+
+.unlock {
+  color: rgba(26, 26, 26, 1);
+  font-family: Be Vietnam Pro;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+/* 
+.hero-sec-bio-data-two {
+  margin-left: 10px;
+} */
+
+.hero-sec-paragraph-one {
+  color: rgba(38, 38, 38, 1);
+  text-align: center;
+  font-family: Be Vietnam Pro;
+  font-size: 28px;
+  font-weight: 500;
+  padding-top: 16px;
+  line-height: 150%; /* 42px */
+}
+
+.hero-sec-paragraph-two {
+  color: rgba(38, 38, 38, 1);
+  text-align: center;
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 6px;
+  line-height: 150%; /* 24px */
+}
+
+.hero-section-all-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+.btn-explore {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+  border: transparent;
+  display: flex;
+  border-radius: 6px;
+  padding: 14px 20px;
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s;
+  line-height: 150%; /* 21px */
+}
+
+.btn-explore:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgb(255, 171, 54);
+}
+
+.btn-explore:active {
+  background-color: rgba(255, 196, 3, 0.938);
+  color: black;
+}
+
+.btn-pricing {
+  color: rgba(38, 38, 38, 1);
+  background-color: rgba(255, 255, 255, 1);
+  padding: 14px 20px;
+  text-align: center;
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  border: transparent;
+  transition: 0.2s;
+  margin-left: 12px;
+}
+
+.btn-pricing:hover {
+  color: rgba(255, 149, 0, 1);
+}
+
+.btn-pricing:active {
+  color: rgb(87, 51, 0);
+}
+
+.hero-sec-web-links {
+  background-color: rgba(255, 255, 255, 1);
+  margin-top: 100px;
+  margin-bottom: 80px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-sec-bottom-images {
+  padding: 24px 24px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  justify-content: space-around;
+}
+
+.hero-sec-bottom-images a {
+  padding: 20px 30px; /* 40px */
+  align-items: center;
+  align-items: flex-start;
+  gap: 30px;
+  border-radius: 8px;
+  transition: all 0.2s;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.hero-sec-bottom-images a:hover {
+  background-color: rgba(255, 149, 0, 1);
+}
+
+.hero-sec-bottom-images a:active {
+  background-color: rgb(207, 121, 0);
+}
+
+/* ===============================================================
+                       Image Section Start
+  ================================================================ */
+
+.section-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+/* .img-fluid {
+  width: 1140px;
+  height: 649px;
+} */
+
+/* =================================================================
+                     Benefits Section Start
+  ================================================================== */
+
+.benefits-sec-parents-div-one {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-bottom: 60px;
+}
+
+.benefits-sec-main-heading {
+  font-family: Be Vietnam Pro;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  color: rgba(38, 38, 38, 1);
+  line-height: 150%; /* 57px */
+}
+
+.benefits-sec-paragraph {
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  color: rgba(89, 89, 90, 1);
+}
+
+.benefits-sec-button {
+  margin-left: 12px;
+  margin-bottom: 17px;
+}
+
+.btn-view-all {
+  color: rgba(38, 38, 38, 1);
+  background-color: rgba(255, 255, 255, 1);
+  padding: 14px 20px;
+  text-align: center;
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  border: transparent;
+  transition: 0.2s;
+}
+
+.btn-view-all:hover {
+  color: rgba(255, 149, 0, 1);
+}
+
+.btn-view-all:active {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+}
+
+/* =================================================
+         Benefits Section container text Start
+  ================================================== */
+
+/* =========================
+         Row One start
+  ========================== */
+
+.row-one {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.col-parents-div {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 20px 20px; /* 40px 40px */
+  flex-direction: column;
+  border-radius: 10px;
+  /* width: 413px; */
+}
+
+.one-heading {
+  color: rgba(38, 38, 38, 1);
+  text-align: right;
+  font-family: Be Vietnam Pro;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  line-height: 24px; /* 40% */
+}
+
+.flexible {
+  color: rgba(51, 51, 51, 1);
+  font-family: Be Vietnam Pro;
+  font-size: 20px;
+  text-align: left;
+  font-weight: 600;
+  line-height: 150%; /* 30px */
+  letter-spacing: -0.12px;
+}
+
+.obligations {
+  color: rgba(76, 76, 77, 1);
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  text-align: left;
+  /* width: 333px; */
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.arrow {
+  text-align: right;
+  padding: 14px;
+  gap: 8px;
+  font-size: 26px;
+  margin-left: 245px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background-color: rgba(252, 252, 253, 1);
+  border-radius: 6px;
+}
+
+.arrows {
+  text-align: right;
+  padding: 14px;
+  gap: 8px;
+  margin-left: 245px;
+  margin-top: 65px; /* 40px */
+  margin-bottom: 20px;
+  background-color: rgba(252, 252, 253, 1);
+  border-radius: 6px;
+}
+
+.arrow:hover {
+  background-color: rgb(255, 190, 99);
+}
+
+.arrows:hover {
+  background-color: rgb(255, 190, 99);
+}
+
+.arrow:active {
+  background-color: rgb(255, 177, 68);
+}
+
+.arrows:active {
+  background-color: rgb(255, 177, 68);
+}
+
+
+/* ==========================
+         Row Two start
+  =========================== */
+.row-two {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.col-parent-div {
+  background-color: rgba(255, 255, 255, 1);
+  margin-top: 20px;
+  padding: 20px 20px; /* 40px 40px */
+  flex-direction: column;
+  border-radius: 10px;
+  /* width: 413px; */
+}
+
+/* ===========================================================
+                       Courses Section Start
+  ============================================================ */
+
+.courses-sec-parents-div-one {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+.courses-sec-main-heading {
+  font-family: Be Vietnam Pro;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  color: rgba(38, 38, 38, 1);
+  line-height: 150%; /* 57px */
+}
+
+.courses-sec-paragraph {
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  color: rgba(89, 89, 90, 1);
+}
+
+.courses-sec-button {
+  margin-left: 12px;
+  margin-bottom: 17px;
+}
+
+.btn-view-all {
+  color: rgba(38, 38, 38, 1);
+  background-color: rgba(255, 255, 255, 1);
+  padding: 14px 20px;
+  text-align: center;
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  border: transparent;
+  transition: 0.2s;
+}
+
+.btn-view-all:hover {
+  color: rgba(255, 149, 0, 1);
+}
+
+.btn-view-all:active {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+}
+
+/* ===============================================
+       Courses Section Rows-One Col-One Start
+  ================================================ */
+
+.courses-section-first-rows {
+  margin-bottom: 20px;
+}
+
+.courses-sec-col-parents-div-one {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 40px 40px;
+  border-radius: 10px;
+}
+
+.course-image {
+  border: transparent;
+  width: 549.5px;
+  /* height: 266px; */
+  padding: 0px 0px;
+}
+
+.courses-sec-row-buttons-parents {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.courses-sec-row-buttons {
+  gap: 10px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.btn-weeks {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(76, 76, 77, 1);
+  border: 1px;
+  border-color: rgba(241, 241, 243, 1);
+  padding: 8px 14px;
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btn-weeks:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+}
+
+.btn-beginner {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(76, 76, 77, 1);
+  border: 1px;
+  border-color: rgba(241, 241, 243, 1);
+  padding: 8px 14px;
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btn-beginner:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+}
+
+.john-smith {
+  color: rgba(38, 38, 38, 1);
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* .courses-sec-col-heading-and-paragraph-parents{
+
+} */
+
+.courses-sec-col-heading-fundamentals {
+  font-family: Be Vietnam Pro;
+  font-size: 20px;
+  color: rgba(38, 38, 38, 1);
+  font-weight: 600;
+  line-height: 150%; /* 30px */
+  text-align: left;
+}
+
+.courses-sec-col-paragraph-fundamentals {
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  color: rgba(76, 76, 77, 1);
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  text-align: left;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.btn-get-it-now {
+  text-align: center;
+  color: rgba(38, 38, 38, 1);
+  background-color: rgba(247, 247, 248, 1);
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  padding: 14px 24px;
+  gap: 8px;
+  width: 100%;
+}
+
+.btn-get-it-now:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+}
+
+/* ==================================================
+         Courses Section Rows-One Col-Two Start
+  ===================================================== */
+
+.courses-sec-col-parents-div-two {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 40px 40px;
+  border-radius: 10px;
+}
+
+.course-image-one {
+  border: transparent;
+  width: 549.5px;
+  /* height: 266px; */
+  padding: 0px 0px;
+}
+
+.courses-sec-row-buttons-parents {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.courses-sec-row-buttons {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.btn-weeks {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(76, 76, 77, 1);
+  border: 1px;
+  border-color: rgba(241, 241, 243, 1);
+  padding: 8px 14px;
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-weight: 400;
+  gap: 10px;
+}
+
+.btn-weeks:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+}
+
+.btn-intermediate {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(76, 76, 77, 1);
+  border: 1px;
+  border-color: rgba(241, 241, 243, 1);
+  padding: 8px 14px;
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btn-intermediate:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+}
+
+.johnson {
+  color: rgba(38, 38, 38, 1);
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* .courses-sec-col-heading-and-paragraph-parents{
+
+} */
+
+.courses-sec-col-heading-design {
+  font-family: Be Vietnam Pro;
+  font-size: 20px;
+  color: rgba(38, 38, 38, 1);
+  font-weight: 600;
+  line-height: 150%; /* 30px */
+  text-align: left;
+}
+
+.courses-sec-col-paragraph-fundamentals {
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  color: rgba(76, 76, 77, 1);
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  text-align: left;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.btn-get-it-now {
+  text-align: center;
+  color: rgba(38, 38, 38, 1);
+  background-color: rgba(247, 247, 248, 1);
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  padding: 14px 24px;
+  gap: 8px;
+  width: 100%;
+}
+
+.btn-get-it-now:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+}
+
+/* ========================================
+    Courses Section Rows-Two Col-one Start
+  ========================================= */
+
+.courses-section-second-rows {
+  margin-bottom: 20px;
+}
+
+.courses-sec-col-parents-div-three {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 40px 40px;
+  border-radius: 10px;
+}
+
+.course-image-two {
+  border: transparent;
+  width: 549.5px;
+  /* height: 266px; */
+  padding: 0px 0px;
+}
+
+.courses-sec-row-buttons-parents {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.courses-sec-row-buttons {
+  gap: 10px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.btn-weeks {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(76, 76, 77, 1);
+  border: 1px;
+  border-color: rgba(241, 241, 243, 1);
+  padding: 8px 14px;
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btn-weeks:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+}
+
+.btn-intermediate {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(76, 76, 77, 1);
+  border: 1px;
+  border-color: rgba(241, 241, 243, 1);
+  padding: 8px 14px;
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btn-intermediate:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+}
+
+.david-Brown {
+  color: rgba(38, 38, 38, 1);
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* .courses-sec-col-heading-and-paragraph-parents{
+
+} */
+
+.courses-sec-col-heading-development {
+  font-family: Be Vietnam Pro;
+  font-size: 20px;
+  color: rgba(38, 38, 38, 1);
+  font-weight: 600;
+  line-height: 150%; /* 30px */
+  text-align: left;
+}
+
+.courses-sec-col-paragraph-development {
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  color: rgba(76, 76, 77, 1);
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  text-align: left;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.btn-get-it-now {
+  text-align: center;
+  color: rgba(38, 38, 38, 1);
+  background-color: rgba(247, 247, 248, 1);
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  padding: 14px 24px;
+  gap: 8px;
+  width: 100%;
+}
+
+.btn-get-it-now:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+}
+
+/* ========================================
+    Courses Section Rows-Two Col-Two Start
+  ========================================= */
+
+.courses-sec-col-parents-div-four {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 40px 40px;
+  border-radius: 10px;
+}
+
+.course-image-three {
+  border: transparent;
+  width: 549.5px;
+  /* height: 266px; */
+  padding: 0px 0px;
+}
+
+.courses-sec-row-buttons-parents {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.courses-sec-row-buttons {
+  gap: 10px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.btn-weeks {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(76, 76, 77, 1);
+  border: 1px;
+  border-color: rgba(241, 241, 243, 1);
+  padding: 8px 14px;
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btn-weeks:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+}
+
+.btn-beginner {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(76, 76, 77, 1);
+  border: 1px;
+  border-color: rgba(241, 241, 243, 1);
+  padding: 8px 14px;
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btn-beginner:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+}
+
+.chompson {
+  color: rgba(38, 38, 38, 1);
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.courses-sec-col-heading-beginners {
+  font-family: Be Vietnam Pro;
+  font-size: 20px;
+  color: rgba(38, 38, 38, 1);
+  font-weight: 600;
+  line-height: 150%; /* 30px */
+  text-align: left;
+}
+
+.courses-sec-col-paragraph-beginners {
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  color: rgba(76, 76, 77, 1);
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  text-align: left;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+/* ===============================================
+       Courses Section Rows-Three Col-One Start
+  ================================================ */
+
+/* .courses-section-third-rows {
+  margin-bottom: 20px;
+} */
+
+.courses-sec-col-parents-div-five {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 40px 40px;
+  border-radius: 10px;
+}
+
+.course-image-four {
+  border: transparent;
+  width: 549.5px;
+  /* height: 266px; */
+  padding: 0px 0px;
+}
+
+.courses-sec-row-buttons-parents {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.courses-sec-row-buttons {
+  gap: 10px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.btn-weeks {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(76, 76, 77, 1);
+  border: 1px;
+  border-color: rgba(241, 241, 243, 1);
+  padding: 8px 14px;
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btn-weeks:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+}
+
+.btn-intermediate {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(76, 76, 77, 1);
+  border: 1px;
+  border-color: rgba(241, 241, 243, 1);
+  padding: 8px 14px;
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btn-intermediate:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+}
+
+.david-Adams {
+  color: rgba(38, 38, 38, 1);
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.courses-sec-col-heading-development {
+  font-family: Be Vietnam Pro;
+  font-size: 20px;
+  color: rgba(38, 38, 38, 1);
+  font-weight: 600;
+  line-height: 150%; /* 30px */
+  text-align: left;
+}
+
+.courses-sec-col-paragraph-development {
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  color: rgba(76, 76, 77, 1);
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  text-align: left;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.btn-get-it-now {
+  text-align: center;
+  color: rgba(38, 38, 38, 1);
+  background-color: rgba(247, 247, 248, 1);
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  padding: 14px 24px;
+  gap: 8px;
+  width: 100%;
+}
+
+.btn-get-it-now:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+}
+
+/* ========================================
+    Courses Section Rows-Three Col-Two Start
+  ========================================= */
+
+.courses-sec-col-parents-div-six {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 40px 40px;
+  border-radius: 10px;
+}
+
+.course-image-five {
+  border: transparent;
+  width: 549.5px;
+  /* height: 266px; */
+  padding: 0px 0px;
+}
+
+.courses-sec-row-buttons-parents {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.courses-sec-row-buttons {
+  gap: 10px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.btn-weeks {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(76, 76, 77, 1);
+  border: 1px;
+  border-color: rgba(241, 241, 243, 1);
+  padding: 8px 14px;
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btn-weeks:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+}
+
+.btn-advance {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(76, 76, 77, 1);
+  border: 1px;
+  border-color: rgba(241, 241, 243, 1);
+  padding: 8px 14px;
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btn-advance:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+}
+
+.jennifer-wilson {
+  color: rgba(38, 38, 38, 1);
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.courses-sec-col-heading-advanced-javaScript {
+  font-family: Be Vietnam Pro;
+  font-size: 20px;
+  color: rgba(38, 38, 38, 1);
+  font-weight: 600;
+  line-height: 150%; /* 30px */
+  text-align: left;
+}
+
+.courses-sec-col-paragraph-advanced-javaScript {
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  color: rgba(76, 76, 77, 1);
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  text-align: left;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
