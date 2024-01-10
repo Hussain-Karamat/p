@@ -1279,3 +1279,63 @@ a {
   margin-top: 10px;
   margin-bottom: 24px;
 }
+
+
+/* ============================================================
+                    Testimonial Section Start
+  ============================================================== */
+
+
+.testimonial-sec-parents-div-one {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+.testimonial-sec-main-heading {
+  font-family: Be Vietnam Pro;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  color: rgba(38, 38, 38, 1);
+  line-height: 150%; /* 57px */
+}
+
+.testimonial-sec-paragraph {
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  color: rgba(89, 89, 90, 1);
+}
+
+.testimonial-sec-button {
+  margin-left: 12px;
+  margin-bottom: 17px;
+}
+
+.btn-view-all {
+  color: rgba(38, 38, 38, 1);
+  background-color: rgba(255, 255, 255, 1);
+  padding: 14px 20px;
+  text-align: center;
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  border: transparent;
+  transition: 0.2s;
+}
+
+.btn-view-all:hover {
+  color: rgba(255, 149, 0, 1);
+}
+
+.btn-view-all:active {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+}
