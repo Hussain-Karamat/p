@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Be Vietnam Pro", sans-serif;
 }
 body,
 html {
   height: 100%;
   width: 100%;
-  background: var(--white-97, #f7f7f8);
+  background: rgba(247, 247, 248, 1);
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 li {
@@ -20,7 +20,7 @@ a {
 }
 
 .container {
-  width: 1200px;
+  width: 1300px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -90,8 +90,12 @@ a {
 }
 
 /* ==============================================================
-                 Header Start
+                          Header Start
    ============================================================== */
+
+.header-sec-col-one {
+  border-bottom: 1px solid rgba(241, 241, 243, 1);
+}
 
 .grid {
   display: grid;
@@ -103,16 +107,20 @@ a {
 }
 
 .navbar-parents-div {
-  background-color: rgba(255, 255, 255, 1);
+  /* background-color: rgba(255, 255, 255, 1); */
+  margin-left: 20px;
+  margin-right: 20px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  align-items: center;
   margin-top: 16px;
   margin-bottom: 20px;
 }
 
 .img-and-navbar {
   display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -121,14 +129,20 @@ a {
 }
 
 .navbar {
-  margin-left: 25px; /* 50px */
+  /* margin-left: 25px; 50px  */
   width: 100%;
-  z-index: 3;
+  /* z-index: 3; */
   transition: all 0.3s ease;
 }
 
 .navbar-list {
   display: flex;
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  height: 45px;
+  margin: 0;
 }
 
 /* .navbar li {
@@ -159,7 +173,7 @@ a {
   background-color: rgba(241, 241, 243, 1);
 }
 
-.courses {
+/* .courses {
   margin-left: 26px;
 }
 
@@ -173,7 +187,7 @@ a {
 
 .contact {
   margin-left: 26px;
-}
+} */
 
 /* .navbar-manu-icon-btn {
   display: none;
@@ -201,7 +215,7 @@ a {
   line-height: 150%; /* 21px */
   color: rgba(38, 38, 38, 1);
   transition: color 0.2s linear;
-  background-color: rgba(255, 255, 255, 1);
+  /* background-color: rgba(255, 255, 255, 1); */
 }
 
 .btn-sign:hover {
@@ -237,6 +251,10 @@ a {
   color: black;
 }
 
+/* .first-hr{
+
+} */
+
 /* =============================================================
                       Hero Section Start
   ============================================================== */
@@ -261,7 +279,12 @@ a {
 .hero-sec-bio-data-one {
   display: flex;
   align-items: center;
+  border-radius: 8px;
   padding: 12px 24px 12px 12px;
+  background-color: rgba(252, 252, 253, 1);
+  border: 1px solid rgba(255, 244, 229, 1);
+  /* border-color: rgba(241, 241, 243, 1);
+  border: 1px; */
 }
 
 .icons {
@@ -279,7 +302,6 @@ a {
   font-style: normal;
   font-weight: 600;
   padding-left: 10px;
-  background-color: rgba(255, 255, 255, 1);
   line-height: 150%; /* 54px */
   margin: 0px;
 }
@@ -305,6 +327,7 @@ a {
   font-weight: 500;
   padding-top: 16px;
   line-height: 150%; /* 42px */
+  margin: 0px;
 }
 
 .hero-sec-paragraph-two {
@@ -313,7 +336,8 @@ a {
   font-family: Be Vietnam Pro;
   font-size: 16px;
   font-weight: 400;
-  margin-top: 6px;
+  padding-top: 6px;
+  margin: 0px;
   line-height: 150%; /* 24px */
 }
 
@@ -357,7 +381,7 @@ a {
   font-size: 14px;
   font-weight: 500;
   line-height: 150%; /* 21px */
-  border: transparent;
+  border: 1px solid rgba(241, 241, 243, 1);
   transition: 0.2s;
   margin-left: 12px;
 }
@@ -371,7 +395,9 @@ a {
 }
 
 .hero-sec-web-links {
-  background-color: rgba(255, 255, 255, 1);
+  /* background-color: rgba(255, 255, 255, 1); */
+  background-color: rgba(252, 252, 253, 1);
+  border: 1px solid rgba(241, 241, 243, 1);
   margin-top: 100px;
   margin-bottom: 80px;
   border-radius: 8px;
@@ -386,6 +412,9 @@ a {
   align-items: center;
   /* justify-content: center; */
   justify-content: space-around;
+  /* width: 1279px; */
+  width: 1165px;
+  height: 116px;
 }
 
 .hero-sec-bottom-images a {
@@ -395,7 +424,7 @@ a {
   gap: 30px;
   border-radius: 8px;
   transition: all 0.2s;
-  background-color: rgba(255, 255, 255, 1);
+  border-left: 1px solid rgba(241, 241, 243, 1);
 }
 
 .hero-sec-bottom-images a:hover {
@@ -417,10 +446,11 @@ a {
   margin-bottom: 100px;
 }
 
-/* .img-fluid {
-  width: 1140px;
+.image-sec-fluid {
+  width: 1165px;
+  /* width: 1280px; */
   height: 649px;
-} */
+}
 
 /* =================================================================
                      Benefits Section Start
@@ -430,7 +460,7 @@ a {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  margin-left: 15px;
+  /* margin-left: 20px; */
   margin-bottom: 60px;
 }
 
@@ -441,6 +471,8 @@ a {
   font-weight: 600;
   color: rgba(38, 38, 38, 1);
   line-height: 150%; /* 57px */
+  margin: 0;
+  margin-bottom: 4px;
 }
 
 .benefits-sec-paragraph {
@@ -450,6 +482,7 @@ a {
   font-weight: 400;
   line-height: 150%; /* 24px */
   color: rgba(89, 89, 90, 1);
+  margin: 0;
 }
 
 .benefits-sec-button {
@@ -459,14 +492,14 @@ a {
 
 .btn-view-all {
   color: rgba(38, 38, 38, 1);
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(252, 252, 253, 1);
   padding: 14px 20px;
   text-align: center;
   font-family: Be Vietnam Pro;
   font-size: 14px;
   font-weight: 500;
   line-height: 150%; /* 21px */
-  border: transparent;
+  border: 1px solid rgba(241, 241, 243, 1);
   transition: 0.2s;
 }
 
@@ -495,10 +528,13 @@ a {
 
 .col-parents-div {
   background-color: rgba(255, 255, 255, 1);
-  padding: 20px 20px; /* 40px 40px */
   flex-direction: column;
   border-radius: 10px;
   /* width: 413px; */
+  display: flex;
+  padding: 20px;
+  align-items: flex-end;
+  gap: 40px;
 }
 
 .one-heading {
@@ -507,7 +543,6 @@ a {
   font-family: Be Vietnam Pro;
   font-size: 60px;
   font-weight: 700;
-  margin-bottom: 40px;
   padding-top: 20px;
   line-height: 24px; /* 40% */
 }
@@ -520,6 +555,7 @@ a {
   font-weight: 600;
   line-height: 150%; /* 30px */
   letter-spacing: -0.12px;
+  margin: 0;
 }
 
 .obligations {
@@ -540,9 +576,10 @@ a {
   gap: 8px;
   font-size: 26px;
   margin-left: 245px;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  /* margin-top: 40px; */
+  /* margin-bottom: 20px; */
   background-color: rgba(252, 252, 253, 1);
+  border: 1px solid rgba(241, 241, 243, 1);
   border-radius: 6px;
 }
 
@@ -551,9 +588,10 @@ a {
   padding: 14px;
   gap: 8px;
   margin-left: 245px;
-  margin-top: 65px; /* 40px */
-  margin-bottom: 20px;
+  /* margin-top: 65px;  */
+  /* margin-bottom: 20px; */
   background-color: rgba(252, 252, 253, 1);
+  border: 1px solid rgba(241, 241, 243, 1);
   border-radius: 6px;
 }
 
@@ -573,10 +611,10 @@ a {
   background-color: rgb(255, 177, 68);
 }
 
-
 /* ==========================
          Row Two start
   =========================== */
+
 .row-two {
   margin: 0;
   display: flex;
@@ -590,18 +628,24 @@ a {
   flex-direction: column;
   border-radius: 10px;
   /* width: 413px; */
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
 }
 
 /* ===========================================================
                        Courses Section Start
   ============================================================ */
 
+.courses-section {
+  margin-top: 100px;
+}
+
 .courses-sec-parents-div-one {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  margin-left: 15px;
-  margin-top: 100px;
+  /* margin-left: 30px; */
   margin-bottom: 60px;
 }
 
@@ -612,6 +656,8 @@ a {
   font-weight: 600;
   color: rgba(38, 38, 38, 1);
   line-height: 150%; /* 57px */
+  margin: 0;
+  padding-bottom: 4px;
 }
 
 .courses-sec-paragraph {
@@ -621,6 +667,7 @@ a {
   font-weight: 400;
   line-height: 150%; /* 24px */
   color: rgba(89, 89, 90, 1);
+  margin: 0;
 }
 
 .courses-sec-button {
@@ -630,14 +677,14 @@ a {
 
 .btn-view-all {
   color: rgba(38, 38, 38, 1);
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(252, 252, 253, 1);
   padding: 14px 20px;
   text-align: center;
   font-family: Be Vietnam Pro;
   font-size: 14px;
   font-weight: 500;
   line-height: 150%; /* 21px */
-  border: transparent;
+  border: 1px solid rgba(241, 241, 243, 1);
   transition: 0.2s;
 }
 
@@ -656,12 +703,18 @@ a {
 
 .courses-section-first-rows {
   margin-bottom: 20px;
+  /* margin-left: 20px; */
 }
 
 .courses-sec-col-parents-div-one {
   background-color: rgba(255, 255, 255, 1);
   padding: 40px 40px;
   border-radius: 10px;
+  border: 1px solid rgba(241, 241, 243, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-self: stretch;
 }
 
 .course-image {
@@ -720,6 +773,7 @@ a {
   font-family: Be Vietnam Pro;
   font-size: 16px;
   font-weight: 500;
+  margin-bottom: 0;
 }
 
 /* .courses-sec-col-heading-and-paragraph-parents{
@@ -733,6 +787,7 @@ a {
   font-weight: 600;
   line-height: 150%; /* 30px */
   text-align: left;
+  margin: 0;
 }
 
 .courses-sec-col-paragraph-fundamentals {
@@ -744,7 +799,7 @@ a {
   text-align: left;
   width: 100%;
   margin-top: 10px;
-  margin-bottom: 24px;
+  margin-bottom: 0px;
 }
 
 .btn-get-it-now {
@@ -773,6 +828,10 @@ a {
   background-color: rgba(255, 255, 255, 1);
   padding: 40px 40px;
   border-radius: 10px;
+  border: 1px solid rgba(241, 241, 243, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .course-image-one {
@@ -855,7 +914,7 @@ a {
   text-align: left;
   width: 100%;
   margin-top: 10px;
-  margin-bottom: 24px;
+  margin-bottom: 0px;
 }
 
 .btn-get-it-now {
@@ -882,12 +941,17 @@ a {
 
 .courses-section-second-rows {
   margin-bottom: 20px;
+  /* margin-left: 20px; */
 }
 
 .courses-sec-col-parents-div-three {
   background-color: rgba(255, 255, 255, 1);
   padding: 40px 40px;
   border-radius: 10px;
+  border: 1px solid rgba(241, 241, 243, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .course-image-two {
@@ -959,6 +1023,7 @@ a {
   font-weight: 600;
   line-height: 150%; /* 30px */
   text-align: left;
+  margin: 0;
 }
 
 .courses-sec-col-paragraph-development {
@@ -970,7 +1035,7 @@ a {
   text-align: left;
   width: 100%;
   margin-top: 10px;
-  margin-bottom: 24px;
+  margin-bottom: 0px;
 }
 
 .btn-get-it-now {
@@ -999,6 +1064,10 @@ a {
   background-color: rgba(255, 255, 255, 1);
   padding: 40px 40px;
   border-radius: 10px;
+  border: 1px solid rgba(241, 241, 243, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .course-image-three {
@@ -1066,6 +1135,7 @@ a {
   font-weight: 600;
   line-height: 150%; /* 30px */
   text-align: left;
+  margin: 0;
 }
 
 .courses-sec-col-paragraph-beginners {
@@ -1077,7 +1147,7 @@ a {
   text-align: left;
   width: 100%;
   margin-top: 10px;
-  margin-bottom: 24px;
+  margin-bottom: 0px;
 }
 
 /* ===============================================
@@ -1085,13 +1155,17 @@ a {
   ================================================ */
 
 /* .courses-section-third-rows {
-  margin-bottom: 20px;
+  margin-left: 20px;
 } */
 
 .courses-sec-col-parents-div-five {
   background-color: rgba(255, 255, 255, 1);
   padding: 40px 40px;
   border-radius: 10px;
+  border: 1px solid rgba(241, 241, 243, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .course-image-four {
@@ -1170,7 +1244,7 @@ a {
   text-align: left;
   width: 100%;
   margin-top: 10px;
-  margin-bottom: 24px;
+  margin-bottom: 0px;
 }
 
 .btn-get-it-now {
@@ -1184,6 +1258,7 @@ a {
   padding: 14px 24px;
   gap: 8px;
   width: 100%;
+  border: 1px solid rgba(241, 241, 243, 1);
 }
 
 .btn-get-it-now:hover {
@@ -1199,6 +1274,10 @@ a {
   background-color: rgba(255, 255, 255, 1);
   padding: 40px 40px;
   border-radius: 10px;
+  border: 1px solid rgba(241, 241, 243, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .course-image-five {
@@ -1266,6 +1345,7 @@ a {
   font-weight: 600;
   line-height: 150%; /* 30px */
   text-align: left;
+  margin: 0;
 }
 
 .courses-sec-col-paragraph-advanced-javaScript {
@@ -1277,21 +1357,22 @@ a {
   text-align: left;
   width: 100%;
   margin-top: 10px;
-  margin-bottom: 24px;
+  margin-bottom: 0px;
 }
-
 
 /* ============================================================
                     Testimonial Section Start
-  ============================================================== */
+   ============================================================== */
 
+.testimonial-section {
+  margin-top: 100px;
+}
 
 .testimonial-sec-parents-div-one {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  margin-left: 15px;
-  margin-top: 100px;
+  /* margin-left: 30px; */
   margin-bottom: 60px;
 }
 
@@ -1302,6 +1383,8 @@ a {
   font-weight: 600;
   color: rgba(38, 38, 38, 1);
   line-height: 150%; /* 57px */
+  margin: 0;
+  padding-bottom: 4px;
 }
 
 .testimonial-sec-paragraph {
@@ -1311,6 +1394,7 @@ a {
   font-weight: 400;
   line-height: 150%; /* 24px */
   color: rgba(89, 89, 90, 1);
+  margin: 0;
 }
 
 .testimonial-sec-button {
@@ -1320,14 +1404,14 @@ a {
 
 .btn-view-all {
   color: rgba(38, 38, 38, 1);
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(252, 252, 253, 1);
   padding: 14px 20px;
   text-align: center;
   font-family: Be Vietnam Pro;
   font-size: 14px;
   font-weight: 500;
   line-height: 150%; /* 21px */
-  border: transparent;
+  border: 1px solid rgba(241, 241, 243, 1);
   transition: 0.2s;
 }
 
@@ -1338,4 +1422,1158 @@ a {
 .btn-view-all:active {
   color: rgba(255, 255, 255, 1);
   background-color: rgba(255, 149, 0, 1);
+}
+
+/* ===========================================
+    Testimonial Section Row-one Col-1 Start
+  ============================================ */
+
+.testimonial-row-one {
+  /* margin-left: 20px; */
+  margin-bottom: 20px;
+}
+
+.col-parent-container {
+  background-color: rgba(255, 255, 255, 1);
+  /* padding: 24px 40px; */
+  border-radius: 10px;
+  border: 1px solid rgba(255, 244, 229, 1);
+}
+
+.testimonial-col-paragraph-one {
+  color: rgba(76, 76, 77, 1);
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  /* width: 549.5px; */
+  padding: 40px;
+  margin: 0;
+  align-items: flex-start;
+  line-height: 150%; /* 24px */
+}
+
+.testimonial-image-and-button-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 40px;
+  background: var(--White-99, #fcfcfd);
+  border-top: 1px solid rgba(241, 241, 243, 1);
+}
+
+.testimonial-image-and-paragraph {
+  display: flex;
+  align-items: flex-end;
+}
+
+.testimonial-col-img-one {
+  width: 50px;
+  height: 50px;
+}
+
+.sarah-l {
+  color: rgba(51, 51, 51, 1);
+  padding-left: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+}
+
+.btn-read-full {
+  color: rgba(38, 38, 38, 1);
+  background-color: rgba(247, 247, 248, 1);
+  font-size: 14px;
+  display: flex;
+  padding: 14px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  border: 1px solid rgba(255, 244, 229, 1);
+}
+
+.btn-read-full:hover {
+  color: #fff;
+  background-color: rgba(255, 149, 0, 1);
+}
+
+.btn-read-full:active {
+  color: rgba(255, 149, 0, 1);
+  background-color: #fff;
+  border: none;
+}
+
+/* ===========================================
+    Testimonial Section Row-one Col-two Start
+  ============================================ */
+
+.col-parent-container {
+  background-color: rgba(255, 255, 255, 1);
+  /* padding: 24px 40px; */
+  border-radius: 10px;
+  border: 1px solid rgba(255, 244, 229, 1);
+}
+
+.testimonial-col-paragraph-two {
+  color: rgba(76, 76, 77, 1);
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  margin: 0;
+  /* width: 549.5px; */
+  padding: 40px;
+  align-items: flex-start;
+  line-height: 150%; /* 24px */
+}
+
+.testimonial-image-and-button-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 40px;
+  background: var(--White-99, #fcfcfd);
+}
+
+.testimonial-image-and-paragraph {
+  display: flex;
+  align-items: flex-end;
+}
+
+.testimonial-col-img-two {
+  width: 50px;
+  height: 50px;
+}
+
+.jason-m {
+  color: rgba(51, 51, 51, 1);
+  padding-left: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+}
+
+.btn-read-full {
+  color: rgba(38, 38, 38, 1);
+  background-color: rgba(247, 247, 248, 1);
+  font-size: 14px;
+  display: flex;
+  padding: 14px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  border: 1px solid rgba(255, 244, 229, 1);
+}
+
+.btn-read-full:hover {
+  color: #fff;
+  background-color: rgba(255, 149, 0, 1);
+}
+
+.btn-read-full:active {
+  color: rgba(255, 149, 0, 1);
+  background-color: #fff;
+  border: none;
+}
+
+/* ===========================================
+    Testimonial Section Row-two Col-three Start
+  ============================================ */
+
+/* .testimonial-row-two {
+  margin-left: 20px;
+} */
+
+.col-parent-container {
+  background-color: rgba(255, 255, 255, 1);
+  /* padding: 24px 40px; */
+  border-radius: 10px;
+  border: 1px solid rgba(255, 244, 229, 1);
+}
+
+.testimonial-col-paragraph-three {
+  color: rgba(76, 76, 77, 1);
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  margin: 0;
+  /* width: 549.5px; */
+  padding: 40px;
+  align-items: flex-start;
+  line-height: 150%; /* 24px */
+}
+
+.testimonial-image-and-button-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 40px;
+  background: var(--White-99, #fcfcfd);
+}
+
+.testimonial-image-and-paragraph {
+  display: flex;
+  align-items: flex-end;
+}
+
+.testimonial-col-img-three {
+  width: 50px;
+  height: 50px;
+}
+
+.emily-r {
+  color: rgba(51, 51, 51, 1);
+  padding-left: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+}
+
+.btn-read-full {
+  color: rgba(38, 38, 38, 1);
+  background-color: rgba(247, 247, 248, 1);
+  font-size: 14px;
+  display: flex;
+  padding: 14px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  border: 1px solid rgba(255, 244, 229, 1);
+}
+
+.btn-read-full:hover {
+  color: #fff;
+  background-color: rgba(255, 149, 0, 1);
+}
+
+.btn-read-full:active {
+  color: rgba(255, 149, 0, 1);
+  background-color: #fff;
+  border: none;
+}
+
+/* ===========================================
+   Testimonial Section Row-two Col-four Start
+  ============================================ */
+
+.col-parent-container {
+  background-color: rgba(255, 255, 255, 1);
+  /* padding: 24px 40px; */
+  border-radius: 10px;
+  border: 1px solid rgba(255, 244, 229, 1);
+}
+
+.testimonial-col-paragraph-four {
+  color: rgba(76, 76, 77, 1);
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  /* width: 549.5px; */
+  padding: 40px;
+  margin: 0;
+  align-items: flex-start;
+  line-height: 150%; /* 24px */
+}
+
+.testimonial-image-and-button-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 40px;
+  background: var(--White-99, #fcfcfd);
+}
+
+.testimonial-image-and-paragraph {
+  display: flex;
+  align-items: flex-end;
+}
+
+.testimonial-col-img-four {
+  width: 50px;
+  height: 50px;
+}
+
+.michael-k {
+  color: rgba(51, 51, 51, 1);
+  padding-left: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+}
+
+.btn-read-full {
+  color: rgba(38, 38, 38, 1);
+  background-color: rgba(247, 247, 248, 1);
+  font-size: 14px;
+  display: flex;
+  padding: 14px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  border: 1px solid rgba(255, 244, 229, 1);
+}
+
+.btn-read-full:hover {
+  color: #fff;
+  background-color: rgba(255, 149, 0, 1);
+}
+
+.btn-read-full:active {
+  color: rgba(255, 149, 0, 1);
+  background-color: #fff;
+  border: none;
+}
+
+/* ============================================================
+                    Pricing Section Start
+ ============================================================== */
+
+.pricing-section {
+  margin-top: 100px;
+}
+
+.pricing-sec-parents-div-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 60px;
+}
+
+/* .pricing-sec-heading-and-paragraph {
+  padding-left: 30px;
+} */
+
+.pricing-sec-main-heading {
+  color: rgba(38, 38, 38, 1);
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 150%; /* 57px */
+  padding: 0px 0px 4px 0;
+  margin: 0;
+}
+
+.pricing-sec-paragraph {
+  color: rgba(89, 89, 90, 1);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 150%; /* 24px */
+}
+
+.pricing-sec-button {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  border-radius: 8px;
+  padding: 12px;
+  align-items: center;
+}
+
+.btn-monthly {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  padding: 12px 24px;
+  gap: 10px;
+  border-radius: 6px;
+}
+
+.btn-monthly:hover {
+  color: rgba(76, 76, 77, 1);
+  background-color: coral;
+}
+
+.btn-monthly:active {
+  border: none;
+  color: rgba(255, 149, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.btn-yearly {
+  color: rgba(76, 76, 77, 1);
+  background-color: transparent;
+  font-size: 14px;
+  border-radius: 100px;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  padding: 12px 24px;
+  gap: 10px;
+}
+
+.btn-yearly:hover {
+  color: rgba(76, 76, 77, 1);
+  background-color: coral;
+}
+
+.btn-yearly:active {
+  border: none;
+  color: rgba(255, 149, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* ========================================
+    Pricing Section Row-One Col-one Start
+ ========================================== */
+.Pricing-container {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 4px; /* 50px */
+  border-radius: 12px;
+}
+
+/* .pricing-section-col-one {
+  background-color: rgba(252, 252, 253, 1);
+  display: flex;
+  padding: 40px 24px 24px 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  flex: 1 0 0;
+} */
+
+.pricing-section-col-parents {
+  background-color: rgba(252, 252, 253, 1);
+  /* display: flex; */
+  padding: 40px 12px; /* 40px 24px 24px 24px */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* gap: 50px; */
+  /* flex: 1 0 0; */
+  border: 1px solid rgba(241, 241, 243, 1);
+  border-radius: 12px;
+}
+
+/* .pricing-section-col-parents{
+  border: 5px black;
+} */
+.btn-free-plan {
+  font-size: 18px;
+  color: rgba(38, 38, 38, 1);
+  background-color: rgba(255, 249, 240, 1);
+  border: 1px solid rgba(255, 234, 204, 1);
+  width: 526.5px;
+  height: 50px;
+  padding: 10px, 22px;
+  border-radius: 4px;
+  /* border: 1px rgba(255, 234, 204, 1); */
+}
+
+.btn-free-plan:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+}
+
+.btn-free-plan:active {
+  color: chocolate;
+  background-color: bisque;
+}
+
+.pricing-section-parghraph {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.pricing-sec-col-heading-one {
+  color: rgba(38, 38, 38, 1);
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 73%; /* 43.8px */
+}
+
+.pricing-sec-col-para {
+  color: rgba(76, 76, 77, 1);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 73%; /* 11.68px */
+  margin: 0px;
+}
+
+.pricing-sec-heading-and-paragraphs-parents {
+  border: 1px solid rgba(255, 244, 229, 1);
+  border-radius: 14px 14px 0px 0px;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%; /* width: 526.5px; */
+}
+
+.pricing-heading h4 {
+  color: rgba(38, 38, 38, 1);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+  margin: 0;
+}
+
+.card-parents {
+  display: flex;
+  padding: 0px 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 466px;
+}
+
+.Pricing-sec-card-one-line-one {
+  display: flex;
+  padding: 12px;
+  gap: 8px;
+  align-self: stretch;
+  border: 1px solid rgba(255, 244, 229, 1);
+  border-radius: 6px;
+  width: 406.5px;
+  height: 48px;
+}
+
+.Pricing-sec-card-one-line-two {
+  display: flex;
+  padding: 12px;
+  gap: 8px;
+  align-self: stretch;
+  border: 1px solid rgba(255, 244, 229, 1);
+  border-radius: 6px;
+  width: 406.5px;
+  height: 48px;
+}
+
+.Pricing-sec-card-one-line-three {
+  display: flex;
+  padding: 12px;
+  gap: 8px;
+  align-self: stretch;
+  border: 1px solid rgba(255, 244, 229, 1);
+  border-radius: 6px;
+  width: 406.5px;
+  height: 48px;
+}
+
+.Pricing-sec-card-one-line-four {
+  display: flex;
+  padding: 12px;
+  gap: 8px;
+  align-self: stretch;
+  border: 1px solid rgba(255, 244, 229, 1);
+  border-radius: 6px;
+  width: 406.5px;
+  height: 48px;
+}
+
+.Pricing-sec-card-one-line-five {
+  display: flex;
+  padding: 12px;
+  gap: 8px;
+  align-self: stretch;
+  border: 1px solid rgba(255, 244, 229, 1);
+  border-radius: 6px;
+  width: 406.5px;
+  height: 48px;
+}
+
+.Pricing-sec-card-one-line-six {
+  display: flex;
+  padding: 12px;
+  gap: 8px;
+  align-self: stretch;
+  border: 1px solid rgba(255, 244, 229, 1);
+  border-radius: 6px;
+  width: 406.5px;
+  height: 48px;
+}
+
+.Pricing-sec-card-one-line-seven {
+  display: flex;
+  padding: 12px;
+  gap: 8px;
+  align-self: stretch;
+  border: 1px solid rgba(255, 244, 229, 1);
+  border-radius: 6px;
+  width: 406.5px;
+  height: 48px;
+}
+
+.right-arrow {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.wrong-arrow {
+  width: 24px;
+  height: 24px;
+  gap: 10px;
+}
+
+.Pricing-card-one-line-paragraph-one {
+  color: rgba(76, 76, 77, 1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  margin: 0px;
+}
+
+.Pricing-card-one-line-paragraph-two {
+  color: rgba(76, 76, 77, 1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  margin: 0px;
+}
+
+.Pricing-card-one-line-paragraph-three {
+  color: rgba(76, 76, 77, 1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  margin: 0px;
+}
+
+.Pricing-card-one-line-paragraph-four {
+  color: rgba(76, 76, 77, 1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  margin: 0px;
+}
+
+.Pricing-card-one-line-paragraph-five {
+  color: rgba(76, 76, 77, 1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  margin: 0px;
+}
+
+.Pricing-card-one-line-paragraph-six {
+  color: rgba(76, 76, 77, 1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  margin: 0px;
+}
+
+.Pricing-card-one-line-paragraph-seven {
+  color: rgba(76, 76, 77, 1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  margin: 0px;
+}
+
+.btn-pricing-section-col-bottom-started-button {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 149, 0, 1);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%; /* 21px */
+  display: flex;
+  padding: 18px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 0px 0px 8px 8px;
+  width: 526.5px;
+  height: 57px;
+  flex-direction: none;
+}
+
+.btn-pricing-section-col-bottom-started-button:hover {
+  background-color: coral;
+  color: burlywood;
+}
+
+.pricing-section-col-bottom-started-buttonk:active {
+  color: indianred;
+  background-color: darksalmon;
+}
+
+/* ==========================================================
+           Frequently Asked Questions Section start
+ ============================================================ */
+
+.frequently-section {
+  margin-top: 100px;
+}
+
+.frequently-section-container {
+  /* display: flex; */
+  padding: 80px;
+  /* gap: 80px; */
+  /* flex-direction: column; */
+  background-color: rgba(255, 255, 255, 1);
+  /* width: 1279px;
+  align-items: flex-start; */
+  border-radius: 12px;
+}
+
+.frequently-section-parents-div {
+  /* display: flex; */
+  width: 408px;
+  /* flex-direction: column;
+  align-items: flex-start; */
+  gap: 40px;
+}
+
+.frequently-sec-heading {
+  color: rgba(38, 38, 38, 1);
+  font-size: 38px;
+  width: 408px;
+  font-weight: 600;
+  line-height: 120%; /* 45.6px */
+  margin: 0px;
+}
+
+.frequently-sec-paragraph {
+  color: rgba(51, 51, 51, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  margin-top: 8px;
+  margin-bottom: 0;
+  width: 408px;
+}
+
+.btn-all-faqs {
+  color: rgba(38, 38, 38, 1);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 14px 20px;
+  line-height: 150%; /* 21px */
+  border: 1px solid rgba(241, 241, 243, 1);
+  transition: 0.1s;
+  margin-top: 40px;
+}
+
+.btn-all-faqs:hover {
+  color: #fff;
+  background-color: rgba(255, 149, 0, 1);
+}
+
+.btn-all-faqs:active {
+  background-color: #fff;
+  color: burlywood;
+  border: none;
+}
+
+/* ==============================
+    frequently-section-col-two
+  =============================== */
+
+.frequently-section-col-parents-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.frequently-sec-col-parents-one {
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  align-self: stretch;
+  border: 1px solid rgba(241, 241, 243, 1);
+  border-radius: 10px;
+}
+
+.frequently-sec-col-two-parents-top-div {
+  display: flex;
+  padding-bottom: 20px;
+  gap: 30px;
+  border-bottom: 1px solid var(--White-95, #f1f1f3);
+}
+
+.frequently-sec-heading-multiple {
+  color: rgba(38, 38, 38, 1);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+  margin: 0;
+  width: 322px;
+}
+
+.wrong-arrow-two {
+  /* width: 24px; */
+  /* height: 24px; */
+  /* font-size: 12px; */
+  display: flex;
+  /* padding: 10px; */
+  gap: 10px;
+}
+
+.frequently-sec-paragraph-absolutely {
+  color: rgba(76, 76, 77, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.096px;
+  margin: 0;
+}
+
+.frequently-sec-col-two-parents-top-div-two {
+  display: flex;
+  padding: 16px 24px;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid var(--White-95, #f1f1f3);
+  background: var(--White-97, #f7f7f8);
+}
+
+.frequently-sec-paragraph-enrollment {
+  color: rgba(51, 51, 51, 1);
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+}
+
+.right-arrow-two {
+  /* width: 24px; */
+  /* height: 24px; */
+  /* font-size: 12px; */
+  display: flex;
+  /* padding: 10px; */
+  gap: 10px;
+}
+
+.frequently-sec-col-parents-two {
+  display: flex;
+  padding: 24px 40px;
+  align-items: center;
+  gap: 40px;
+  border-radius: 10px;
+  border: 1px solid var(--White-95, #f1f1f3);
+  background: var(--Absolute-White, #fff);
+}
+
+.frequently-sec-col-parents-three {
+  display: flex;
+  padding: 24px 40px;
+  align-items: center;
+  gap: 40px;
+  border-radius: 10px;
+  border: 1px solid var(--White-95, #f1f1f3);
+  background: var(--Absolute-White, #fff);
+}
+
+.frequently-sec-col-parents-four {
+  display: flex;
+  padding: 24px 40px;
+  align-items: center;
+  gap: 40px;
+  border-radius: 10px;
+  border: 1px solid var(--White-95, #f1f1f3);
+  background: var(--Absolute-White, #fff);
+}
+
+.frequently-sec-col-parents-five {
+  display: flex;
+  padding: 24px 40px;
+  align-items: center;
+  gap: 40px;
+  border-radius: 10px;
+  border: 1px solid var(--White-95, #f1f1f3);
+  background: var(--Absolute-White, #fff);
+}
+
+.frequently-sec-paragraph-instructors {
+  color: rgba(38, 38, 38, 1);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+  margin: 0;
+  width: 312px;
+}
+
+/* .add-icon{
+  
+} */
+
+.footer-right-side-cols-parents {
+  display: flex;
+  width: 737px;
+  align-items: flex-start;
+  /* justify-content: space-evenly; */
+  gap: 24px;
+}
+
+/* ==========================================================
+                       Footer col-one start
+ ============================================================ */
+
+.footer {
+  background: var(--Absolute-White, #fff);
+  display: flex;
+  padding: 60px 80px 20px 80px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 100px;
+}
+
+.footer-parents-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-first-div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 304px;
+}
+
+.footer-main-logo {
+  width: 44px;
+  font-size: 44px;
+}
+
+.footer-main-div {
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.footer-parentes-div {
+  display: flex;
+}
+
+.mail-box-img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-hello-paragraph {
+  color: rgba(38, 38, 38, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  margin: 0;
+  padding-left: 4px;
+}
+
+.call-img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-phon-number {
+  color: rgba(38, 38, 38, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  margin: 0;
+  padding-left: 4px;
+}
+
+.location-img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-somewhere-paragraph {
+  color: rgba(38, 38, 38, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  margin: 0;
+  padding-left: 4px;
+}
+
+/* ===========================================
+              Footer col-two start
+ =============================================*/
+
+ .footer-container
+ {
+  padding: 0;
+ }
+
+.footer-second-div {
+  width: 229.67px;
+}
+
+.footer-serveses {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-serves-home {
+  color: rgba(38, 38, 38, 1);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 150%; /* 27px */
+  /* text-decoration: none;
+  list-style: none; */
+}
+
+.footer-bottom-serves {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.footer-serves-benefits {
+  color: rgba(89, 89, 90, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  margin: 0;
+}
+
+.footer-serves-courses {
+  color: rgba(89, 89, 90, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  margin: 0;
+}
+
+.footer-serves-testimonials {
+  color: rgba(89, 89, 90, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  margin: 0;
+}
+
+.footer-serves-faq {
+  color: rgba(89, 89, 90, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  margin: 0;
+}
+
+/* ===========================================
+              Footer col-thrde start
+ =============================================*/
+
+.footer-thrde-div {
+  width: 229.67px;
+  /* margin-left: 112px; */
+}
+
+.footer-serves-about {
+  color: rgba(38, 38, 38, 1);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 150%; /* 27px */
+}
+
+.footer-serves-company {
+  color: rgba(89, 89, 90, 1);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 150%; /* 24px */
+}
+
+.footer-serves-achievements {
+  color: rgba(89, 89, 90, 1);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 150%; /* 24px */
+}
+
+.footer-serves-goals {
+  color: rgba(89, 89, 90, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  margin: 0;
+}
+
+/* ===========================================
+              Footer col-four start
+ =============================================*/
+
+.footer-four-div {
+  width: 229.67px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-col-four-heading {
+  color: rgba(38, 38, 38, 1);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 150%; /* 27px */
+  margin: 0;
+}
+
+.footer-col-four-img {
+  display: flex;
+  gap: 14px;
+}
+
+.footer-facebook-img {
+  /* width: 20px;
+  height: 20px; */
+  display: flex;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--White-95, #f1f1f3);
+  background: var(--White-97, #f7f7f8);
+}
+
+.footer-tweter-img {
+  display: flex;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--White-95, #f1f1f3);
+  background: var(--White-97, #f7f7f8);
+}
+
+.footer-in-img {
+  display: flex;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--White-95, #f1f1f3);
+  background: var(--White-97, #f7f7f8);
+}
+
+.footer-hr-line {
+  width: 1278px;
+  height: 1px;
+  background-color: rgba(241, 241, 243, 1);
+  display: flex;
+  /* padding: 0px 30px 0px 30px; */
+  margin: 30px 0px 30px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.footer-bottom-paragraph-skillbridge {
+  color: rgba(101, 101, 103, 1);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  margin: 0;
 }
